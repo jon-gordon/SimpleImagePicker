@@ -20,6 +20,10 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    @IBAction func experiment(sender: UIButton) {
+        let nextController = UIImagePickerController()
+        self.presentViewController(nextController, animated: true, completion: nil)
+    }
 
 }
 
