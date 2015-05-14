@@ -25,5 +25,19 @@ class ViewController: UIViewController {
         self.presentViewController(nextController, animated: true, completion: nil)
     }
 
+    @IBAction func experiment2(sender: UIButton) {
+        let image = UIImage()
+        let nextController = UIActivityViewController(activityItems: [image], applicationActivities: nil)
+        self.presentViewController(nextController, animated: true, completion: nil)
+    }
+
+    @IBAction func experiment3(sender: UIButton) {
+        let nextController = UIAlertController()
+        let okAction = UIAlertAction(title: "OK", style: UIAlertActionStyle.Default) {
+            action in self.dismissViewControllerAnimated(true, completion: nil)
+        }
+        nextController.addAction(okAction)
+        self.presentViewController(nextController, animated: true, completion: nil)
+    }
 }
 

@@ -16,20 +16,51 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WcI-BL-d6C">
-                                <rect key="frame" x="265" y="285" width="70" height="30"/>
-                                <state key="normal" title="Present">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WcI-BL-d6C">
+                                <rect key="frame" x="225" y="140" width="150" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="Go1-nA-5Ws"/>
+                                </constraints>
+                                <state key="normal" title="Image Picker">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
                                     <action selector="experiment:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="uXP-7k-j3Z"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="um5-rK-hpC">
+                                <rect key="frame" x="225" y="420" width="150" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="Wnp-7U-Bx6"/>
+                                </constraints>
+                                <state key="normal" title="Alert View">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="experiment3:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="ywo-ui-h4S"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xhr-Yn-Y9g">
+                                <rect key="frame" x="225" y="280" width="150" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="CsB-hq-gt2"/>
+                                </constraints>
+                                <state key="normal" title="Activity View">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="experiment2:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="bac-D8-dgp"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="centerY" secondItem="WcI-BL-d6C" secondAttribute="centerY" id="5q2-cT-VlF"/>
-                            <constraint firstAttribute="centerX" secondItem="WcI-BL-d6C" secondAttribute="centerX" id="pk7-p4-0YA"/>
+                            <constraint firstAttribute="centerY" secondItem="Xhr-Yn-Y9g" secondAttribute="centerY" constant="5" id="8Od-9Y-oIh"/>
+                            <constraint firstAttribute="centerX" secondItem="um5-rK-hpC" secondAttribute="centerX" id="GE4-MJ-uVb"/>
+                            <constraint firstAttribute="centerX" secondItem="Xhr-Yn-Y9g" secondAttribute="centerX" id="QdI-jM-Q6h"/>
+                            <constraint firstItem="um5-rK-hpC" firstAttribute="top" secondItem="Xhr-Yn-Y9g" secondAttribute="bottom" constant="110" id="hK0-4T-Eqz"/>
+                            <constraint firstItem="Xhr-Yn-Y9g" firstAttribute="top" secondItem="WcI-BL-d6C" secondAttribute="bottom" constant="110" id="tjs-vF-hOV"/>
+                            <constraint firstAttribute="centerX" secondItem="WcI-BL-d6C" secondAttribute="centerX" id="wV9-sL-7ir"/>
                         </constraints>
                     </view>
                 </viewController>
